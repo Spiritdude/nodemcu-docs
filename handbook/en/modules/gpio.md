@@ -11,7 +11,6 @@ If not using a NodeMCU dev kit, please refer to the below GPIO pin maps for the 
 ** [*] D0(GPIO16) can only be used as gpio read/write. No support for open-drain/interrupt/pwm/i2c/ow. **
 
 
-## Function Overview
 | Function | esp8266 | esp32 | linux |
 | --- | --- | --- | --- |
 `gpio.mode()` | supported | - | supported | 

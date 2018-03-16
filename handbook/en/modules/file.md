@@ -23,7 +23,6 @@ if file.open("/SD0/somefile.txt") then
 end
 ```
 
-## Function Overview
 | Function | esp8266 | esp32 | linux |
 | --- | --- | --- | --- |
 `file.chdir()` | supported | supported | supported | 
