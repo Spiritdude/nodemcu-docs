@@ -38,7 +38,6 @@ end
 `file.on()` | supported | supported | - | 
 `file.open()` | supported | supported | supported | 
 `file.remove()` | supported | supported | supported | 
-`#Syntax` | supported | supported | supported | 
 `file.rename()` | supported | supported | supported | 
 `file.stat()` | supported | supported | supported | 
 
@@ -344,14 +343,7 @@ end
 
 Remove a file from the file system. The file must not be currently open.
 
-## #Syntax
-
-| Platform | Support |
-| --- | --- |
-| esp32 | supported |
-| esp8266 | supported |
-| linux | supported |
-
+###Syntax
 `file.remove(filename)`
 
 #### Parameters
