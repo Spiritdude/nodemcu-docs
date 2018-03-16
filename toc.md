@@ -1,5 +1,6 @@
 # NodeMCU API
- | Module | esp8266 | esp32 | linux | Description |
+| Module | esp8266 | esp32 | linux | Description |
+| --- | --- | --- | --- | -- |
 | adc |x | x | - | 
 | ads1115 |x | - | - | 
 | adxl345 |x | - | - | 
