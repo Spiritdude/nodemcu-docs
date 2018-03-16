@@ -28,6 +28,7 @@ end
 
 ## Function Overview
 | Function | esp32 | esp8266 | linux |
+| --- | --- | --- | --- |
 file.chdir() | supported | supported | supported | 
 file.exists() | supported | supported | supported | 
 file.format() | supported | supported | supported | 
