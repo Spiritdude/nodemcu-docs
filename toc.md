@@ -3,12 +3,12 @@
 | --- | --- | --- | --- | -- |
 | adc | supported | supported | - | The ADC module provides access to the in-built ADC. |
 | ads1115 | supported | - | - | This module provides access to the ADS1115 16-Bit analog-to-digital converter. |
-| adxl345 | supported | - | - | 
-| am2320 | supported | - | - | 
+| adxl345 | supported | - | - | This module provides access to the [ADXL345](https://www.sparkfun.com/products/9836) triple axis accelerometer. |
+| am2320 | supported | - | - | This module provides access to the [AM2320](https://akizukidenshi.com/download/ds/aosong/AM2320.pdf) humidity and temperature sensor, using the i2c interface. |
 | apa102 | supported | - | - | This module provides Lua access to [APA102 RGB LEDs](https://youtu.be/UYvC-hukz-0) which are similar in function to the common [WS2812](ws2812) addressable LEDs. |
-| bit | supported | supported | supported | 
+| bit | supported | supported | supported | Bit manipulation support, on 32bit integers. |
 | bme280 | supported | - | - | This module provides a simple interface to [BME280/BMP280 temperature/air presssure/humidity sensors](http://www.bosch-sensortec.com/bst/products/all_products/bme280) (Bosch Sensortec). |
-| bmp085 | supported | - | - | 
+| bmp085 | supported | - | - | This module provides access to the [BMP085](https://www.sparkfun.com/tutorials/253) temperature and pressure sensor. The module also works with BMP180. |
 | cjson | supported | - | - | This module has been replaced by [sjson](sjson.md). It provides a superset of functionality. All references to `cjson` can be replaced by `sjson`. |
 | coap | supported | - | - | The CoAP module provides a simple implementation according to [CoAP](http://tools.ietf.org/html/rfc7252) protocol. |
 | cron | supported | - | - | [Cron](https://en.wikipedia.org/wiki/Cron)-like scheduler module. |
@@ -19,25 +19,25 @@
 | enduser-setup | supported | - | - | This module provides a simple way of configuring ESP8266 chips without using a serial interface or pre-programming WiFi credentials onto the chip. |
 | **[file](handbook/en/modules/file.md)** | supported | supported | supported | The file module provides access to the file system and its individual files. |
 | gdbstub | supported | - | - | This module provides basic source code debugging of the firmware when used in conjunction with a version of gdb built for the lx106. If you enable this module, then fatal errors (like invalid memory reads) will trap into the gdbstub. This uses UART0 to talk to GDB. If this happens while the UART0 is connected to a terminal (or some IDE like esplorer) then you will see a string starting with `$T` and a few more characters after that. This is the signal that a trap has happened, and control should be passed to gdb. |
-| **[gpio](handbook/en/modules/gpio.md)** | supported | supported | supported | 
-| hdc1080 | supported | - | - | 
-| hmc5883l | supported | - | - | 
+| **[gpio](handbook/en/modules/gpio.md)** | supported | supported | supported | This module provides access to the [GPIO](https://en.wikipedia.org/wiki/General-purpose_input/output) (General Purpose Input/Output) subsystem. |
+| hdc1080 | supported | - | - | This module provides access to the [HDC1080](http://www.ti.com/product/HDC1080) low power, high accuracy digital humidity sensor with temperature sensor. |
+| hmc5883l | supported | - | - | This module provides access to the [HMC5883L](https://www.sparkfun.com/products/10530) three axis digital compass. |
 | http | supported | - | - | Basic HTTP *client* module that provides an interface to do GET/POST/PUT/DELETE over HTTP(S), as well as customized requests. Due to the memory constraints on ESP8266, the supported page/body size is limited by available memory. Attempting to receive pages larger than this will fail. If larger page/body sizes are necessary, consider using [`net.createConnection()`](net.md#netcreateconnection) and stream in the data. |
 | hx711 | supported | - | - | This module provides access to an [HX711 load cell amplifier/ADC](https://learn.sparkfun.com/tutorials/load-cell-amplifier-hx711-breakout-hookup-guide). The HX711 is an inexpensive 24bit ADC with programmable 128x, 64x, and 32x gain. Currently only channel A at 128x gain is supported. |
 | i2c | supported | supported | - | 
-| l3g4200d | supported | - | - | 
-| mcp4725 | supported | - | - | 
+| l3g4200d | supported | - | - | This module provides access to the [L3G4200D](https://www.sparkfun.com/products/10612) three axis digital gyroscope. |
+| mcp4725 | supported | - | - | This module provides access to the [MCP4725 12-bit Digital to Analog Converter](http://ww1.microchip.com/downloads/en/DeviceDoc/22039d.pdf). |
 | mdns | supported | - | - | [Multicast DNS](https://en.wikipedia.org/wiki/Multicast_DNS) is used as part of Bonjour / Zeroconf. This allows system to identify themselves and the services that they provide on a local area network. Clients are then able to discover these systems and connect to them.  |
-| mqtt | supported | - | - | 
+| mqtt | supported | - | - | The client adheres to version 3.1.1 of the [MQTT](https://en.wikipedia.org/wiki/MQTT) protocol. Make sure that your broker supports and is correctly configured for version 3.1.1. The client is backwards incompatible with brokers running MQTT 3.1. |
 | net | supported | supported | supported | ** TLS operations was moved to the [TLS](tls.md) module ** |
 | node | supported | supported | supported | The node module provides access to system-level features such as sleep, restart and various info and IDs. |
 | ow | supported | supported | - | This module provides functions to work with the [1-Wire](https://en.wikipedia.org/wiki/1-Wire) device communications bus system. |
 | pcm | supported | - | - | Play sounds through various back-ends. |
-| perf | supported | - | - | 
+| perf | supported | - | - | This module provides simple performance measurement for an application. It samples the program counter roughly every 50 microseconds and builds a histogram of the values that it finds. Since there is only a small amount |
 | pwm | supported | - | - | 
 | rc | supported | - | - | 
-| rfswitch | supported | - | - | 
-| rotary | supported | - | - | 
+| rfswitch | supported | - | - | Module to operate 433/315Mhz devices like power outlet sockets, relays, etc. This will most likely work with all popular low cost power outlet sockets with a SC5262 / SC5272, HX2262 / HX2272, PT2262 / PT2272, EV1527, RT1527, FP1527 or HS1527 chipset. |
+| rotary | supported | - | - | This module can read the state of cheap rotary encoder switches. These are available at all the standard places for a dollar or two. They are five pin devices where three are used for a gray code encoder for rotation, and two are used for the push switch. These switches are commonly used in car audio systems.  |
 | rtcfifo | supported | - | - | The rtcfifo module implements a first-in,first-out storage intended for sensor readings. As the name suggests, it is backed by the [RTC](https://en.wikipedia.org/wiki/Real-time_clock) user memory and as such survives deep sleep cycles. Conceptually it can be thought of as a cyclic array of `{ timestamp, name, value }` tuples. Internally it uses a space-optimized storage format to allow the greatest number of samples to be kept. This comes with several trade-offs, and as such is not a one-solution-fits-all. Notably: |
 | rtcmem | supported | - | - | The rtcmem module provides basic access to the [RTC](https://en.wikipedia.org/wiki/Real-time_clock) (Real Time Clock) memory. |
 | rtctime | supported | - | - | The rtctime module provides advanced timekeeping support for NodeMCU, including keeping time across deep sleep cycles (provided [`rtctime.dsleep()`](#rtctimedsleep) is used instead of [`node.dsleep()`](node.md#nodedsleep)). This can be used to significantly extend battery life on battery powered sensor nodes, as it is no longer necessary to fire up the RF module each wake-up in order to obtain an accurate timestamp. |
