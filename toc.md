@@ -58,7 +58,7 @@
 | uart | supported | supported | - | The [UART](https://en.wikipedia.org/wiki/Universal_asynchronous_receiver/transmitter) (Universal asynchronous receiver/transmitter) module allows configuration of and communication over the UART serial port. |
 | ucg | supported | - | - | Ucglib is a graphics library developed at [olikraus/ucglib](https://github.com/olikraus/ucglib) with support for color TFT displays |
 | websocket | supported | - | - | A websocket *client* module that implements [RFC6455](https://tools.ietf.org/html/rfc6455) (version 13) and provides a simple interface to send and receive messages. |
-| wifi | supported | supported | - | !!! important |
+| wifi | supported | supported | - | 	The WiFi subsystem is maintained by background tasks that must run periodically |
 | wps | supported | - | - | [WPS](https://en.wikipedia.org/wiki/Wi-Fi_Protected_Setup) allows devices to be added to an existing network without entering the network credentials. |
 | ws2801 | supported | - | - | 
 | ws2812 | supported | supported | - | ws2812 is a library to handle ws2812-like led strips. |
