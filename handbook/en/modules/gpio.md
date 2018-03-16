@@ -78,8 +78,10 @@ gpio.read(0)
 #### See also
 [`gpio.mode()`](#gpiomode)
 
-### NodeMCU/ESP32 Specifics
-Read digital GPIO pin value.
+
+### Specifics
+| --- | --- |
+| esp32 | Read digital GPIO pin value.
 
 #### Syntax
 `gpio.read(pin)`
@@ -89,6 +91,7 @@ Read digital GPIO pin value.
 
 #### Returns
 0 = low, 1 = high
+
 
 
 
@@ -192,8 +195,10 @@ end
 #### See also
 [`gpio.mode()`](#gpiomode)
 
-### NodeMCU/ESP32 Specifics
-Establish or clear a callback function to run on interrupt for a GPIO.
+
+### Specifics
+| --- | --- |
+| esp32 | Establish or clear a callback function to run on interrupt for a GPIO.
 
 #### Syntax
 `gpio.trig(pin, type [, callback])`
@@ -212,6 +217,7 @@ Establish or clear a callback function to run on interrupt for a GPIO.
 
 #### Returns
 `nil`
+
 
 
 ## gpio.write()
@@ -245,8 +251,10 @@ gpio.write(pin, gpio.HIGH)
 #### See also
 - [`gpio.mode()`](#gpiomode)
 - [`gpio.read()`](#gpioread)
-### NodeMCU/ESP32 Specifics
-Set digital GPIO pin value.
+
+### Specifics
+| --- | --- |
+| esp32 | Set digital GPIO pin value.
 
 #### Syntax
 `gpio.write(pin, level)`
@@ -257,6 +265,7 @@ Set digital GPIO pin value.
 
 #### Returns
 `nil`
+
 
 
 ## Credits

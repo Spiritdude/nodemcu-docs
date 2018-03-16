@@ -544,8 +544,11 @@ none
 #### See also
 [`file.open()`](#fileopen)
 
-### NodeMCU/ESP32 Specifics
-The object model isn't available.
+
+### Specifics
+| --- | --- |
+| esp32 | The object model isn't available.
+
 
 
 ## file.flush(), file.obj:flush()
@@ -586,8 +589,11 @@ end
 #### See also
 [`file.close()` / `file.obj:close()`](#fileclose-fileobjclose)
 
-### NodeMCU/ESP32 Specifics
-The object model isn't available.
+
+### Specifics
+| --- | --- |
+| esp32 | The object model isn't available.
+
 
 
 ## file.read(), file.obj:read()
@@ -642,8 +648,11 @@ end
 - [`file.open()`](#fileopen)
 - [`file.readline()` / `file.obj:readline()`](#filereadline-fileobjreadline)
 
-### NodeMCU/ESP32 Specifics
-The object model isn't available.
+
+### Specifics
+| --- | --- |
+| esp32 | The object model isn't available.
+
 
 
 ## file.readline(), file.obj:readline()
@@ -683,8 +692,11 @@ end
 - [`file.read()` / `file.obj:read()`](#fileread-fileobjread)
 
 
-### NodeMCU/ESP32 Specifics
-The object model isn't available.
+
+### Specifics
+| --- | --- |
+| esp32 | The object model isn't available.
+
 
 
 ## file.seek(), file.obj:seek()
@@ -727,8 +739,11 @@ end
 #### See also
 [`file.open()`](#fileopen)
 
-### NodeMCU/ESP32 Specifics
-The object model isn't available.
+
+### Specifics
+| --- | --- |
+| esp32 | The object model isn't available.
+
 
 
 ## file.write(), file.obj:write()
@@ -778,8 +793,11 @@ end
 - [`file.open()`](#fileopen)
 - [`file.writeline()` / `file.obj:writeline()`](#filewriteline-fileobjwriteline)
 
-### NodeMCU/ESP32 Specifics
-The object model isn't available.
+
+### Specifics
+| --- | --- |
+| esp32 | The object model isn't available.
+
 
 
 ## file.writeline(), file.obj:writeline()
@@ -817,8 +835,11 @@ end
 #### See also
 - [`file.open()`](#fileopen)
 - [`file.readline()` / `file.obj:readline()`](#filereadline-fileobjreadline)
-### NodeMCU/ESP32 Specifics
-The object model isn't available.
+
+### Specifics
+| --- | --- |
+| esp32 | The object model isn't available.
+
 
 
 
