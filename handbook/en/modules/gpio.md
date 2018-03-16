@@ -16,7 +16,7 @@ If not using a NodeMCU dev kit, please refer to the below GPIO pin maps for the 
 | --- | --- | --- | --- |
 `gpio.mode()` | - | supported | supported | 
 `gpio.read()` | supported | supported | supported | 
-`gpio.serout()` | supported | supported | supported | 
+`gpio.serout()` | - | supported | - | 
 `gpio.trig()` | supported | supported | - | 
 `gpio.write()` | supported | supported | supported | 
 
@@ -78,31 +78,13 @@ gpio.read(0)
 #### See also
 [`gpio.mode()`](#gpiomode)
 
-
-### Specifics
-| Platform | Notes |
-| --- | --- |
-| esp32 | Read digital GPIO pin value.
-
-#### Syntax
-`gpio.read(pin)`
-
-#### Parameters
-`pin` pin to read, see [GPIO Overview](#gpio-overview)
-
-#### Returns
-0 = low, 1 = high
-
-
-
-
 ## gpio.serout()
 
 | Platform | Support |
 | --- | --- |
-| esp32 | supported |
+| esp32 | - |
 | esp8266 | supported |
-| linux | supported |
+| linux | - |
 
 
 Serialize output based on a sequence of delay-times in µs. After each delay, the pin is toggled. After the last cycle and last delay the pin is not toggled.
@@ -196,32 +178,6 @@ end
 #### See also
 [`gpio.mode()`](#gpiomode)
 
-
-### Specifics
-| Platform | Notes |
-| --- | --- |
-| esp32 | Establish or clear a callback function to run on interrupt for a GPIO.
-
-#### Syntax
-`gpio.trig(pin, type [, callback])`
-
-#### Parameters
-- `pin`, see [GPIO Overview](#gpio-overview)
-- `type` trigger type, one of
-    - `gpio.INTR_UP` for trigger on rising edge
-    - `gpio.INTR_DOWN` for trigger on falling edge
-    - `gpio.INTR_UP_DOWN` for trigger on both edges
-    - `gpio.INTR_LOW` for trigger on low level
-    - `gpio.INTR_HIGH` for trigger on high level
-- `callback` optional function to be called when trigger fires, trigger is disabled when omitted. Parameters are:
-    - `pin`
-    - `level`
-
-#### Returns
-`nil`
-
-
-
 ## gpio.write()
 
 | Platform | Support |
@@ -253,23 +209,6 @@ gpio.write(pin, gpio.HIGH)
 #### See also
 - [`gpio.mode()`](#gpiomode)
 - [`gpio.read()`](#gpioread)
-
-### Specifics
-| Platform | Notes |
-| --- | --- |
-| esp32 | Set digital GPIO pin value.
-
-#### Syntax
-`gpio.write(pin, level)`
-
-#### Parameters
-- `pin` pin to write, see [GPIO Overview](#gpio-overview)
-- `level` 1 or 0
-
-#### Returns
-`nil`
-
-
 
 ## Credits
 | Platform | Since | Origin/Contributor | Maintainer | Source |
