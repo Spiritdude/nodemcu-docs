@@ -1,7 +1,4 @@
 # file Module
-| Since  | Origin / Contributor  | Maintainer  | Source  |
-| :----- | :-------------------- | :---------- | :------ |
-| 2014-12-22 | [Zeroday](https://github.com/funshine) | [Zeroday](https://github.com/funshine) | [file.c](../../../app/modules/file.c)|
 
 The file module provides access to the file system and its individual files.
 
@@ -32,6 +29,7 @@ end
 `file.chdir()` | supported | supported | supported | 
 `file.exists()` | supported | supported | supported | 
 `file.format()` | supported | supported | supported | 
+`file.fscfg ()` | supported | supported | supported | 
 `file.fsinfo()` | supported | supported | supported | 
 `file.list()` | supported | supported | supported | 
 `file.mount()` | supported | supported | supported | 
@@ -40,6 +38,15 @@ end
 `file.remove()` | supported | supported | supported | 
 `file.rename()` | supported | supported | supported | 
 `file.stat()` | supported | supported | supported | 
+`Basic model` | supported | supported | supported | 
+`Object model` | supported | supported | supported | 
+`file.close(), file.obj:close()` | supported | supported | supported | 
+`file.flush(), file.obj:flush()` | supported | supported | supported | 
+`file.read(), file.obj:read()` | supported | supported | supported | 
+`file.readline(), file.obj:readline()` | supported | supported | supported | 
+`file.seek(), file.obj:seek()` | supported | supported | supported | 
+`file.write(), file.obj:write()` | supported | supported | supported | 
+`file.writeline(), file.obj:writeline()` | supported | supported | supported | 
 
 ## file.chdir()
 
@@ -130,6 +137,13 @@ none
 [`file.remove()`](#fileremove)
 
 ## file.fscfg ()
+
+| Platform | Support |
+| --- | --- |
+| esp32 | supported |
+| esp8266 | supported |
+| linux | supported |
+
 
 Returns the flash address and physical size of the file system area, in bytes.
 
@@ -452,6 +466,13 @@ t = nil
 The `file` module provides several functions to access the content of a file after it has been opened with [`file.open()`](#fileopen). They can be used as part of a basic model or an object model:
 
 ## Basic model
+
+| Platform | Support |
+| --- | --- |
+| esp32 | supported |
+| esp8266 | supported |
+| linux | supported |
+
 In the basic model there is max one file opened at a time. The file access functions operate on this file per default. If another file is opened, the previous default file needs to be closed beforehand.
 
 ```lua
@@ -463,6 +484,13 @@ end
 ```
 
 ## Object model
+
+| Platform | Support |
+| --- | --- |
+| esp32 | supported |
+| esp8266 | supported |
+| linux | supported |
+
 Files are represented by file objects which are created by `file.open()`. File access functions are available as methods of this object, and multiple file objects can coexist.
 
 ```lua
@@ -493,6 +521,13 @@ end
 
 ## file.close(), file.obj:close()
 
+| Platform | Support |
+| --- | --- |
+| esp32 | supported |
+| esp8266 | supported |
+| linux | supported |
+
+
 Closes the open file, if any.
 
 #### Syntax
@@ -510,6 +545,13 @@ none
 [`file.open()`](#fileopen)
 
 ## file.flush(), file.obj:flush()
+
+| Platform | Support |
+| --- | --- |
+| esp32 | supported |
+| esp8266 | supported |
+| linux | supported |
+
 
 Flushes any pending writes to the file system, ensuring no data is lost on a restart. Closing the open file using [`file.close()` / `fd:close()`](#fileclose-fileobjclose) performs an implicit flush as well.
 
@@ -541,6 +583,13 @@ end
 [`file.close()` / `file.obj:close()`](#fileclose-fileobjclose)
 
 ## file.read(), file.obj:read()
+
+| Platform | Support |
+| --- | --- |
+| esp32 | supported |
+| esp8266 | supported |
+| linux | supported |
+
 
 Read content from the open file.
 
@@ -587,6 +636,13 @@ end
 
 ## file.readline(), file.obj:readline()
 
+| Platform | Support |
+| --- | --- |
+| esp32 | supported |
+| esp8266 | supported |
+| linux | supported |
+
+
 Read the next line from the open file. Lines are defined as zero or more bytes ending with a EOL ('\n') byte. If the next line is longer than 1024, this function only returns the first 1024 bytes.
 
 #### Syntax
@@ -616,6 +672,13 @@ end
 
 
 ## file.seek(), file.obj:seek()
+
+| Platform | Support |
+| --- | --- |
+| esp32 | supported |
+| esp8266 | supported |
+| linux | supported |
+
 
 Sets and gets the file position, measured from the beginning of the file, to the position given by offset plus a base specified by the string whence.
 
@@ -649,6 +712,13 @@ end
 [`file.open()`](#fileopen)
 
 ## file.write(), file.obj:write()
+
+| Platform | Support |
+| --- | --- |
+| esp32 | supported |
+| esp8266 | supported |
+| linux | supported |
+
 
 Write a string to the open file.
 
@@ -690,6 +760,13 @@ end
 
 ## file.writeline(), file.obj:writeline()
 
+| Platform | Support |
+| --- | --- |
+| esp32 | supported |
+| esp8266 | supported |
+| linux | supported |
+
+
 Write a string to the open file and append '\n' at the end.
 
 #### Syntax
@@ -716,3 +793,10 @@ end
 #### See also
 - [`file.open()`](#fileopen)
 - [`file.readline()` / `file.obj:readline()`](#filereadline-fileobjreadline)
+
+## Credits
+| Platform | Since | Origin/Contributor | Maintainer | Source |
+| --- | --- | --- | --- | --- |
+| esp32 | 2014-12-22 | [Zeroday](https://github.com/funshine) | [Zeroday](https://github.com/funshine) | [file.c](../../../components/modules/file.c)|
+| esp8266 | 2014-12-22 | [Zeroday](https://github.com/funshine) | [Zeroday](https://github.com/funshine) | [file.c](../../../app/modules/file.c)|
+| linux 
