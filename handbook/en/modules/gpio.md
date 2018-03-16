@@ -17,7 +17,7 @@ If not using a NodeMCU dev kit, please refer to the below GPIO pin maps for the 
 `gpio.mode()` | - | supported | supported | 
 `gpio.read()` | supported | supported | supported | 
 `gpio.serout()` | supported | supported | supported | 
-`gpio.trig()` | supported | supported | supported | 
+`gpio.trig()` | supported | supported | - | 
 `gpio.write()` | supported | supported | supported | 
 
 ## gpio.mode()
@@ -135,7 +135,7 @@ gpio.serout(1,gpio.HIGH,{5000,995000},100, 1) -- asynchronous 100 flashes 5 ms l
 | --- | --- |
 | esp32 | supported |
 | esp8266 | supported |
-| linux | supported |
+| linux | - |
 
 
 Establish or clear a callback function to run on interrupt for a pin.
@@ -177,11 +177,6 @@ end
 
 #### See also
 [`gpio.mode()`](#gpiomode)
-
-### NodeMCU/Linux
-
-Not yet supported.
-
 
 ## gpio.write()
 
