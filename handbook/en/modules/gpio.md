@@ -12,11 +12,11 @@ If not using a NodeMCU dev kit, please refer to the below GPIO pin maps for the 
 
 
 ## Function Overview
-| Function | esp32 | esp8266 | linux |
+| Function | esp8266 | esp32 | linux |
 | --- | --- | --- | --- |
-`gpio.mode()` | - | supported | supported | 
+`gpio.mode()` | supported | - | supported | 
 `gpio.read()` | supported | supported | supported | 
-`gpio.serout()` | - | supported | - | 
+`gpio.serout()` | supported | - | - | 
 `gpio.trig()` | supported | supported | - | 
 `gpio.write()` | supported | supported | supported | 
 
@@ -24,8 +24,8 @@ If not using a NodeMCU dev kit, please refer to the below GPIO pin maps for the 
 
 | Platform | Support |
 | --- | --- |
-| esp32 | - |
 | esp8266 | supported |
+| esp32 | - |
 | linux | supported |
 
 
@@ -54,8 +54,8 @@ gpio.mode(0, gpio.OUTPUT)
 
 | Platform | Support |
 | --- | --- |
-| esp32 | supported |
 | esp8266 | supported |
+| esp32 | supported |
 | linux | supported |
 
 
@@ -82,8 +82,8 @@ gpio.read(0)
 
 | Platform | Support |
 | --- | --- |
-| esp32 | - |
 | esp8266 | supported |
+| esp32 | - |
 | linux | - |
 
 
@@ -133,8 +133,8 @@ gpio.serout(1,gpio.HIGH,{5000,995000},100, 1) -- asynchronous 100 flashes 5 ms l
 
 | Platform | Support |
 | --- | --- |
-| esp32 | supported |
 | esp8266 | supported |
+| esp32 | supported |
 | linux | - |
 
 
@@ -182,8 +182,8 @@ end
 
 | Platform | Support |
 | --- | --- |
-| esp32 | supported |
 | esp8266 | supported |
+| esp32 | supported |
 | linux | supported |
 
 
@@ -213,6 +213,6 @@ gpio.write(pin, gpio.HIGH)
 ## Credits
 | Platform | Since | Origin/Contributor | Maintainer | Source |
 | --- | --- | --- | --- | --- |
-| esp32 | 2016-11-26 | [Johny Mattsson](https://github.com/jmattsson) | [Johny Mattsson](https://github.com/jmattsson) | [gpio.c](../../../components/modules/gpio.c)|
 | esp8266 | 2014-12-22 | [Zeroday](https://github.com/funshine) | [Zeroday](https://github.com/funshine) | [gpio.c](../../../app/modules/gpio.c)|
+| esp32 | 2016-11-26 | [Johny Mattsson](https://github.com/jmattsson) | [Johny Mattsson](https://github.com/jmattsson) | [gpio.c](../../../components/modules/gpio.c)|
 | linux 

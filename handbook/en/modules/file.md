@@ -24,7 +24,7 @@ end
 ```
 
 ## Function Overview
-| Function | esp32 | esp8266 | linux |
+| Function | esp8266 | esp32 | linux |
 | --- | --- | --- | --- |
 `file.chdir()` | supported | supported | supported | 
 `file.exists()` | supported | supported | supported | 
@@ -39,7 +39,7 @@ end
 `file.rename()` | supported | supported | supported | 
 `file.stat()` | supported | supported | supported | 
 `Basic model` | supported | supported | supported | 
-`Object model` | - | supported | supported | 
+`Object model` | supported | - | supported | 
 `file.close(), file.obj:close()` | supported | supported | supported | 
 `file.flush(), file.obj:flush()` | supported | supported | supported | 
 `file.read(), file.obj:read()` | supported | supported | supported | 
@@ -52,8 +52,8 @@ end
 
 | Platform | Support |
 | --- | --- |
-| esp32 | supported |
 | esp8266 | supported |
+| esp32 | supported |
 | linux | supported |
 
 
@@ -78,8 +78,8 @@ Current directory defaults to the root of internal SPIFFS (`/FLASH`) after syste
 
 | Platform | Support |
 | --- | --- |
-| esp32 | supported |
 | esp8266 | supported |
+| esp32 | supported |
 | linux | supported |
 
 
@@ -113,8 +113,8 @@ end
 
 | Platform | Support |
 | --- | --- |
-| esp32 | supported |
 | esp8266 | supported |
+| esp32 | supported |
 | linux | supported |
 
 
@@ -140,8 +140,8 @@ none
 
 | Platform | Support |
 | --- | --- |
-| esp32 | supported |
 | esp8266 | supported |
+| esp32 | supported |
 | linux | supported |
 
 
@@ -170,8 +170,8 @@ print(string.format("0x%x", file.fscfg()))
 
 | Platform | Support |
 | --- | --- |
-| esp32 | supported |
 | esp8266 | supported |
+| esp32 | supported |
 | linux | supported |
 
 
@@ -200,8 +200,8 @@ print("\nFile system info:\nTotal : "..total.." (k)Bytes\nUsed : "..used.." (k)B
 
 | Platform | Support |
 | --- | --- |
-| esp32 | supported |
 | esp8266 | supported |
+| esp32 | supported |
 | linux | supported |
 
 
@@ -228,8 +228,8 @@ end
 
 | Platform | Support |
 | --- | --- |
-| esp32 | supported |
 | esp8266 | supported |
+| esp32 | supported |
 | linux | supported |
 
 
@@ -259,8 +259,8 @@ vol:umount()
 
 | Platform | Support |
 | --- | --- |
-| esp32 | supported |
 | esp8266 | supported |
+| esp32 | supported |
 | linux | - |
 
 
@@ -299,8 +299,8 @@ sntp.sync(server_ip,
 
 | Platform | Support |
 | --- | --- |
-| esp32 | supported |
 | esp8266 | supported |
+| esp32 | supported |
 | linux | supported |
 
 
@@ -350,8 +350,8 @@ end
 
 | Platform | Support |
 | --- | --- |
-| esp32 | supported |
 | esp8266 | supported |
+| esp32 | supported |
 | linux | supported |
 
 
@@ -379,8 +379,8 @@ file.remove("foo.lua")
 
 | Platform | Support |
 | --- | --- |
-| esp32 | supported |
 | esp8266 | supported |
+| esp32 | supported |
 | linux | supported |
 
 
@@ -407,8 +407,8 @@ file.rename("temp.lua","init.lua")
 
 | Platform | Support |
 | --- | --- |
-| esp32 | supported |
 | esp8266 | supported |
+| esp32 | supported |
 | linux | supported |
 
 
@@ -469,8 +469,8 @@ The `file` module provides several functions to access the content of a file aft
 
 | Platform | Support |
 | --- | --- |
-| esp32 | supported |
 | esp8266 | supported |
+| esp32 | supported |
 | linux | supported |
 
 In the basic model there is max one file opened at a time. The file access functions operate on this file per default. If another file is opened, the previous default file needs to be closed beforehand.
@@ -487,8 +487,8 @@ end
 
 | Platform | Support |
 | --- | --- |
-| esp32 | - |
 | esp8266 | supported |
+| esp32 | - |
 | linux | supported |
 
 Files are represented by file objects which are created by `file.open()`. File access functions are available as methods of this object, and multiple file objects can coexist.
@@ -523,8 +523,8 @@ end
 
 | Platform | Support |
 | --- | --- |
-| esp32 | supported |
 | esp8266 | supported |
+| esp32 | supported |
 | linux | supported |
 
 
@@ -556,8 +556,8 @@ none
 
 | Platform | Support |
 | --- | --- |
-| esp32 | supported |
 | esp8266 | supported |
+| esp32 | supported |
 | linux | supported |
 
 
@@ -602,8 +602,8 @@ end
 
 | Platform | Support |
 | --- | --- |
-| esp32 | supported |
 | esp8266 | supported |
+| esp32 | supported |
 | linux | supported |
 
 
@@ -662,8 +662,8 @@ end
 
 | Platform | Support |
 | --- | --- |
-| esp32 | supported |
 | esp8266 | supported |
+| esp32 | supported |
 | linux | supported |
 
 
@@ -707,8 +707,8 @@ end
 
 | Platform | Support |
 | --- | --- |
-| esp32 | supported |
 | esp8266 | supported |
+| esp32 | supported |
 | linux | supported |
 
 
@@ -755,8 +755,8 @@ end
 
 | Platform | Support |
 | --- | --- |
-| esp32 | supported |
 | esp8266 | supported |
+| esp32 | supported |
 | linux | supported |
 
 
@@ -810,8 +810,8 @@ end
 
 | Platform | Support |
 | --- | --- |
-| esp32 | supported |
 | esp8266 | supported |
+| esp32 | supported |
 | linux | supported |
 
 
@@ -853,6 +853,6 @@ end
 ## Credits
 | Platform | Since | Origin/Contributor | Maintainer | Source |
 | --- | --- | --- | --- | --- |
-| esp32 
 | esp8266 | 2014-12-22 | [Zeroday](https://github.com/funshine) | [Zeroday](https://github.com/funshine) | [file.c](../../../app/modules/file.c)|
+| esp32 
 | linux 
