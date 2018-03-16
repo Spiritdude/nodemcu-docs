@@ -78,6 +78,20 @@ gpio.read(0)
 #### See also
 [`gpio.mode()`](#gpiomode)
 
+### NodeMCU/ESP32 Specifics
+Read digital GPIO pin value.
+
+#### Syntax
+`gpio.read(pin)`
+
+#### Parameters
+`pin` pin to read, see [GPIO Overview](#gpio-overview)
+
+#### Returns
+0 = low, 1 = high
+
+
+
 ## gpio.serout()
 
 | Platform | Support |
@@ -178,6 +192,28 @@ end
 #### See also
 [`gpio.mode()`](#gpiomode)
 
+### NodeMCU/ESP32 Specifics
+Establish or clear a callback function to run on interrupt for a GPIO.
+
+#### Syntax
+`gpio.trig(pin, type [, callback])`
+
+#### Parameters
+- `pin`, see [GPIO Overview](#gpio-overview)
+- `type` trigger type, one of
+    - `gpio.INTR_UP` for trigger on rising edge
+    - `gpio.INTR_DOWN` for trigger on falling edge
+    - `gpio.INTR_UP_DOWN` for trigger on both edges
+    - `gpio.INTR_LOW` for trigger on low level
+    - `gpio.INTR_HIGH` for trigger on high level
+- `callback` optional function to be called when trigger fires, trigger is disabled when omitted. Parameters are:
+    - `pin`
+    - `level`
+
+#### Returns
+`nil`
+
+
 ## gpio.write()
 
 | Platform | Support |
@@ -209,6 +245,19 @@ gpio.write(pin, gpio.HIGH)
 #### See also
 - [`gpio.mode()`](#gpiomode)
 - [`gpio.read()`](#gpioread)
+### NodeMCU/ESP32 Specifics
+Set digital GPIO pin value.
+
+#### Syntax
+`gpio.write(pin, level)`
+
+#### Parameters
+- `pin` pin to write, see [GPIO Overview](#gpio-overview)
+- `level` 1 or 0
+
+#### Returns
+`nil`
+
 
 ## Credits
 | Platform | Since | Origin/Contributor | Maintainer | Source |

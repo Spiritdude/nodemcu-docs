@@ -39,7 +39,7 @@ end
 `file.rename()` | supported | supported | supported | 
 `file.stat()` | supported | supported | supported | 
 `Basic model` | supported | supported | supported | 
-`Object model` | supported | supported | supported | 
+`Object model` | - | supported | supported | 
 `file.close(), file.obj:close()` | supported | supported | supported | 
 `file.flush(), file.obj:flush()` | supported | supported | supported | 
 `file.read(), file.obj:read()` | supported | supported | supported | 
@@ -487,7 +487,7 @@ end
 
 | Platform | Support |
 | --- | --- |
-| esp32 | supported |
+| esp32 | - |
 | esp8266 | supported |
 | linux | supported |
 
@@ -544,6 +544,10 @@ none
 #### See also
 [`file.open()`](#fileopen)
 
+### NodeMCU/ESP32 Specifics
+The object model isn't available.
+
+
 ## file.flush(), file.obj:flush()
 
 | Platform | Support |
@@ -581,6 +585,10 @@ end
 
 #### See also
 [`file.close()` / `file.obj:close()`](#fileclose-fileobjclose)
+
+### NodeMCU/ESP32 Specifics
+The object model isn't available.
+
 
 ## file.read(), file.obj:read()
 
@@ -634,6 +642,10 @@ end
 - [`file.open()`](#fileopen)
 - [`file.readline()` / `file.obj:readline()`](#filereadline-fileobjreadline)
 
+### NodeMCU/ESP32 Specifics
+The object model isn't available.
+
+
 ## file.readline(), file.obj:readline()
 
 | Platform | Support |
@@ -669,6 +681,10 @@ end
 - [`file.open()`](#fileopen)
 - [`file.close()` / `file.obj:close()`](#fileclose-fileobjclose)
 - [`file.read()` / `file.obj:read()`](#fileread-fileobjread)
+
+
+### NodeMCU/ESP32 Specifics
+The object model isn't available.
 
 
 ## file.seek(), file.obj:seek()
@@ -710,6 +726,10 @@ end
 ```
 #### See also
 [`file.open()`](#fileopen)
+
+### NodeMCU/ESP32 Specifics
+The object model isn't available.
+
 
 ## file.write(), file.obj:write()
 
@@ -758,6 +778,10 @@ end
 - [`file.open()`](#fileopen)
 - [`file.writeline()` / `file.obj:writeline()`](#filewriteline-fileobjwriteline)
 
+### NodeMCU/ESP32 Specifics
+The object model isn't available.
+
+
 ## file.writeline(), file.obj:writeline()
 
 | Platform | Support |
@@ -793,10 +817,13 @@ end
 #### See also
 - [`file.open()`](#fileopen)
 - [`file.readline()` / `file.obj:readline()`](#filereadline-fileobjreadline)
+### NodeMCU/ESP32 Specifics
+The object model isn't available.
+
+
 
 ## Credits
 | Platform | Since | Origin/Contributor | Maintainer | Source |
 | --- | --- | --- | --- | --- |
-| esp32 | 2014-12-22 | [Zeroday](https://github.com/funshine) | [Zeroday](https://github.com/funshine) | [file.c](../../../components/modules/file.c)|
-| esp8266 | 2014-12-22 | [Zeroday](https://github.com/funshine) | [Zeroday](https://github.com/funshine) | [file.c](../../../app/modules/file.c)|
+| esp32 | esp8266 | 2014-12-22 | [Zeroday](https://github.com/funshine) | [Zeroday](https://github.com/funshine) | [file.c](../../../app/modules/file.c)|
 | linux 
