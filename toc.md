@@ -6,7 +6,7 @@
 | adxl345 |x | - | - | 
 | am2320 |x | - | - | 
 | apa102 |x | - | - | 
-| bit |x | x | - | 
+| bit |x | x | x | 
 | bme280 |x | - | - | 
 | bmp085 |x | - | - | 
 | cjson |x | - | - | 
@@ -29,8 +29,8 @@
 | mcp4725 |x | - | - | 
 | mdns |x | - | - | 
 | mqtt |x | - | - | 
-| net |x | x | - | 
-| node |x | x | - | 
+| net |x | x | x | 
+| node |x | x | x | 
 | ow |x | x | - | 
 | pcm |x | - | - | 
 | perf |x | - | - | 
@@ -52,7 +52,7 @@
 | tcs34725 |x | - | - | 
 | tls |x | - | - | 
 | tm1829 |x | - | - | 
-| tmr |x | x | - | 
+| tmr |x | x | x | 
 | tsl2561 |x | - | - | 
 | u8g |x | - | - | 
 | uart |x | x | - | 
