@@ -29,18 +29,18 @@ end
 ## Function Overview
 | Function | esp32 | esp8266 | linux |
 | --- | --- | --- | --- |
-file.chdir() | supported | supported | supported | 
-file.exists() | supported | supported | supported | 
-file.format() | supported | supported | supported | 
-file.fsinfo() | supported | supported | supported | 
-file.list() | supported | supported | supported | 
-file.mount() | supported | supported | supported | 
-file.on() | supported | supported | - | 
-file.open() | supported | supported | supported | 
-file.remove() | supported | supported | supported | 
-#Syntax | supported | supported | supported | 
-file.rename() | supported | supported | supported | 
-file.stat() | supported | supported | supported | 
+`file.chdir()` | supported | supported | supported | 
+`file.exists()` | supported | supported | supported | 
+`file.format()` | supported | supported | supported | 
+`file.fsinfo()` | supported | supported | supported | 
+`file.list()` | supported | supported | supported | 
+`file.mount()` | supported | supported | supported | 
+`file.on()` | supported | supported | - | 
+`file.open()` | supported | supported | supported | 
+`file.remove()` | supported | supported | supported | 
+`#Syntax` | supported | supported | supported | 
+`file.rename()` | supported | supported | supported | 
+`file.stat()` | supported | supported | supported | 
 
 ## file.chdir()
 
@@ -48,7 +48,7 @@ file.stat() | supported | supported | supported |
 | --- | --- |
 | esp32 | supported |
 | esp8266 | supported |
-| linux |  |
+| linux | supported |
 
 
 Change current directory (and drive). This will be used when no drive/directory is prepended to filenames.
@@ -74,7 +74,7 @@ Current directory defaults to the root of internal SPIFFS (`/FLASH`) after syste
 | --- | --- |
 | esp32 | supported |
 | esp8266 | supported |
-| linux |  |
+| linux | supported |
 
 
 Determines whether the specified file exists.
@@ -109,7 +109,7 @@ end
 | --- | --- |
 | esp32 | supported |
 | esp8266 | supported |
-| linux |  |
+| linux | supported |
 
 
 Format the file system. Completely erases any existing file system and writes a new one. Depending on the size of the flash chip in the ESP, this may take several seconds.
@@ -159,7 +159,7 @@ print(string.format("0x%x", file.fscfg()))
 | --- | --- |
 | esp32 | supported |
 | esp8266 | supported |
-| linux |  |
+| linux | supported |
 
 
 Return size information for the file system. The unit is Byte for SPIFFS and kByte for FatFS.
@@ -189,7 +189,7 @@ print("\nFile system info:\nTotal : "..total.." (k)Bytes\nUsed : "..used.." (k)B
 | --- | --- |
 | esp32 | supported |
 | esp8266 | supported |
-| linux |  |
+| linux | supported |
 
 
 Lists all files in the file system.
@@ -215,9 +215,9 @@ end
 
 | Platform | Support |
 | --- | --- |
-| esp32 |  |
+| esp32 | supported |
 | esp8266 | supported |
-| linux |  |
+| linux | supported |
 
 
 Mounts a FatFs volume on SD card.
@@ -288,7 +288,7 @@ sntp.sync(server_ip,
 | --- | --- |
 | esp32 | supported |
 | esp8266 | supported |
-| linux |  |
+| linux | supported |
 
 
 Opens a file for access, potentially creating it (for write modes).
@@ -339,7 +339,7 @@ end
 | --- | --- |
 | esp32 | supported |
 | esp8266 | supported |
-| linux |  |
+| linux | supported |
 
 
 Remove a file from the file system. The file must not be currently open.
@@ -350,7 +350,7 @@ Remove a file from the file system. The file must not be currently open.
 | --- | --- |
 | esp32 | supported |
 | esp8266 | supported |
-| linux |  |
+| linux | supported |
 
 `file.remove(filename)`
 
@@ -375,7 +375,7 @@ file.remove("foo.lua")
 | --- | --- |
 | esp32 | supported |
 | esp8266 | supported |
-| linux |  |
+| linux | supported |
 
 
 Renames a file. If a file is currently open, it will be closed first.
@@ -403,7 +403,7 @@ file.rename("temp.lua","init.lua")
 | --- | --- |
 | esp32 | supported |
 | esp8266 | supported |
-| linux |  |
+| linux | supported |
 
 
 Get attribtues of a file or directory in a table. Elements of the table are:
