@@ -17,9 +17,9 @@
 | **ds18b20** | supported | - | - | This module provides access to the DS18B20 1-Wire digital thermometer. |
 | **encoder** | supported | - | - | The encoder modules provides various functions for encoding and decoding byte data. |
 | **enduser-setup** | supported | - | - | This module provides a simple way of configuring ESP8266 chips without using a serial interface or pre-programming WiFi credentials onto the chip. |
-| **[file](handbook/en/modules/file.md)** | supported | supported | supported | The file module provides access to the file system and its individual files. |
+| **[file](en/modules/file.md)** | supported | supported | supported | The file module provides access to the file system and its individual files. |
 | **gdbstub** | supported | - | - | This module provides basic source code debugging of the firmware when used in conjunction with a version of gdb built for the lx106. |
-| **[gpio](handbook/en/modules/gpio.md)** | supported | supported | supported | This module provides access to the [GPIO](https://en.wikipedia.org/wiki/General-purpose_input/output) (General Purpose Input/Output) subsystem. |
+| **[gpio](en/modules/gpio.md)** | supported | supported | supported | This module provides access to the [GPIO](https://en.wikipedia.org/wiki/General-purpose_input/output) (General Purpose Input/Output) subsystem. |
 | **hdc1080** | supported | - | - | This module provides access to the [HDC1080](http://www.ti.com/product/HDC1080) low power, high accuracy digital humidity sensor with temperature sensor. |
 | **hmc5883l** | supported | - | - | This module provides access to the [HMC5883L](https://www.sparkfun.com/products/10530) three axis digital compass. |
 | **http** | supported | - | - | Basic HTTP *client* module that provides an interface to do GET/POST/PUT/DELETE over HTTP(S), as well as customized requests. |
