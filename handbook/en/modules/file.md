@@ -37,7 +37,7 @@ end
 `file.open()` | supported | supported | supported | 
 `file.remove()` | supported | supported | supported | 
 `file.rename()` | supported | supported | supported | 
-`file.stat()` | supported | supported | supported | 
+`file.stat()` | supported | - | supported | 
 `Basic model` | supported | supported | supported | 
 `Object model` | supported | - | supported | 
 `file.close(), file.obj:close()` | supported | supported | supported | 
@@ -408,7 +408,7 @@ file.rename("temp.lua","init.lua")
 | Platform | Support |
 | --- | --- |
 | esp8266 | supported |
-| esp32 | supported |
+| esp32 | - |
 | linux | supported |
 
 

@@ -1,6 +1,9 @@
 ## Object model
 -
 
+## file.stat()
+-
+
 ## file.close(), file.obj:close()
 The object model isn't available.
 
