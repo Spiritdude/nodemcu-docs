@@ -17,9 +17,9 @@
 | ds18b20.md | x | - | - | 
 | encoder.md | x | - | - | 
 | enduser-setup.md | x | - | - | 
-| [file](handbook/en/modules/file.md) | x | x | x | 
+| **[file](handbook/en/modules/file.md)** | x | x | x | 
 | gdbstub.md | x | - | - | 
-| [gpio](handbook/en/modules/gpio.md) | x | x | x | 
+| **[gpio](handbook/en/modules/gpio.md)** | x | x | x | 
 | hdc1080.md | x | - | - | 
 | hmc5883l.md | x | - | - | 
 | http.md | x | - | - | 
