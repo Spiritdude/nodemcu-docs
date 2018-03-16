@@ -29,7 +29,7 @@
 | mcp4725 | supported | - | - | This module provides access to the [MCP4725 12-bit Digital to Analog Converter](http://ww1.microchip.com/downloads/en/DeviceDoc/22039d.pdf). |
 | mdns | supported | - | - | [Multicast DNS](https://en.wikipedia.org/wiki/Multicast_DNS) is used as part of Bonjour / Zeroconf |
 | mqtt | supported | - | - | The client adheres to version 3.1.1 of the [MQTT](https://en.wikipedia.org/wiki/MQTT) protocol |
-| net | supported | supported | supported |  TLS operations was moved to the [TLS](tls.md) module ** |
+| net | supported | supported | supported |  TLS operations was moved to the [TLS](tls.md) module  |
 | node | supported | supported | supported | The node module provides access to system-level features such as sleep, restart and various info and IDs. |
 | ow | supported | supported | - | This module provides functions to work with the [1-Wire](https://en.wikipedia.org/wiki/1-Wire) device communications bus system. |
 | pcm | supported | - | - | Play sounds through various back-ends. |
@@ -50,7 +50,7 @@
 | struct | supported | supported | - | This module offers basic facilities to convert Lua values to and from C structs |
 | switec | supported | - | - | This module controls a [Switec X.27](http://www.jukenswisstech.com/?page_id=103) (or compatible) instrument stepper motor |
 | tcs34725 | supported | - | - | This module provides a simple interface to [TCS34725 colour/light sensors](https://www.adafruit.com/product/1334) (Adafruit). |
-| tls | supported | - | - | SSL/TLS support** |
+| tls | supported | - | - | SSL/TLS support |
 | tm1829 | supported | - | - | tm1829 is a library to handle led strips using Titan Micro tm1829 |
 | tmr | supported | supported | supported | The tmr module allows access to simple timers, the system counter and uptime. |
 | tsl2561 | supported | - | - | 
