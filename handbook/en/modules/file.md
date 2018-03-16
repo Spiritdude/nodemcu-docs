@@ -825,5 +825,6 @@ The object model isn't available.
 ## Credits
 | Platform | Since | Origin/Contributor | Maintainer | Source |
 | --- | --- | --- | --- | --- |
-| esp32 | esp8266 | 2014-12-22 | [Zeroday](https://github.com/funshine) | [Zeroday](https://github.com/funshine) | [file.c](../../../app/modules/file.c)|
+| esp32 
+| esp8266 | 2014-12-22 | [Zeroday](https://github.com/funshine) | [Zeroday](https://github.com/funshine) | [file.c](../../../app/modules/file.c)|
 | linux 
