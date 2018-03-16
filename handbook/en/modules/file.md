@@ -546,6 +546,7 @@ none
 
 
 ### Specifics
+| Platform | Notes |
 | --- | --- |
 | esp32 | The object model isn't available.
 
@@ -591,6 +592,7 @@ end
 
 
 ### Specifics
+| Platform | Notes |
 | --- | --- |
 | esp32 | The object model isn't available.
 
@@ -650,6 +652,7 @@ end
 
 
 ### Specifics
+| Platform | Notes |
 | --- | --- |
 | esp32 | The object model isn't available.
 
@@ -694,6 +697,7 @@ end
 
 
 ### Specifics
+| Platform | Notes |
 | --- | --- |
 | esp32 | The object model isn't available.
 
@@ -741,6 +745,7 @@ end
 
 
 ### Specifics
+| Platform | Notes |
 | --- | --- |
 | esp32 | The object model isn't available.
 
@@ -795,6 +800,7 @@ end
 
 
 ### Specifics
+| Platform | Notes |
 | --- | --- |
 | esp32 | The object model isn't available.
 
@@ -837,6 +843,7 @@ end
 - [`file.readline()` / `file.obj:readline()`](#filereadline-fileobjreadline)
 
 ### Specifics
+| Platform | Notes |
 | --- | --- |
 | esp32 | The object model isn't available.
 

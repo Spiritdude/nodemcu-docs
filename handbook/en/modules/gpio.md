@@ -80,6 +80,7 @@ gpio.read(0)
 
 
 ### Specifics
+| Platform | Notes |
 | --- | --- |
 | esp32 | Read digital GPIO pin value.
 
@@ -197,6 +198,7 @@ end
 
 
 ### Specifics
+| Platform | Notes |
 | --- | --- |
 | esp32 | Establish or clear a callback function to run on interrupt for a GPIO.
 
@@ -253,6 +255,7 @@ gpio.write(pin, gpio.HIGH)
 - [`gpio.read()`](#gpioread)
 
 ### Specifics
+| Platform | Notes |
 | --- | --- |
 | esp32 | Set digital GPIO pin value.
 
