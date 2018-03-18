@@ -4,8 +4,8 @@
 | **adc** | The ADC module provides access to the in-built ADC. | 
 | **bit** | Bit manipulation support, on 32bit integers. | 
 | **dht** |  | 
-| **[file](file.md)** | The file module provides access to the file system and its individual files. | 
-| **[gpio](gpio.md)** | This module provides access to the [GPIO](https://en.wikipedia.org/wiki/General-purpose_input/output) (General Purpose Input/Output) subsystem. | 
+| **[file](modules/file.md)** | The file module provides access to the file system and its individual files. | 
+| **[gpio](modules/gpio.md)** | This module provides access to the [GPIO](https://en.wikipedia.org/wiki/General-purpose_input/output) (General Purpose Input/Output) subsystem. | 
 | **i2c** |  | 
 | **net** |  TLS operations was moved to the [TLS](tls.md) module  | 
 | **node** | The node module provides access to system-level features such as sleep, restart and various info and IDs. | 
