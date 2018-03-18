@@ -1,4 +1,4 @@
-# ESP32
+# NodeMCU/ESP32
 | Module | Description |
 | --- | --- |
 | **adc** | The ADC module provides access to the in-built ADC. | 

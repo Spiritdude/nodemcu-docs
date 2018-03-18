@@ -1,4 +1,4 @@
-# Linux
+# NodeMCU/Linux
 | Module | Description |
 | --- | --- |
 | **bit** | Bit manipulation support, on 32bit integers. | 
