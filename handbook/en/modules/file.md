@@ -1,4 +1,4 @@
-[NodeMCU API](../toc.md): file Module
+[NodeMCU API](../toc.md): `file` Module
 # file Module
 
 The file module provides access to the file system and its individual files.

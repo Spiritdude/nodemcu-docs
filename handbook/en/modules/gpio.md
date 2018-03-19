@@ -1,4 +1,4 @@
-[NodeMCU API](../toc.md): gpio Module
+[NodeMCU API](../toc.md): `gpio` Module
 # GPIO Module
 
 

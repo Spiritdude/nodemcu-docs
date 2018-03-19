@@ -1,4 +1,4 @@
-[NodeMCU API](../toc.md): node Module
+[NodeMCU API](../toc.md): `node` Module
 # node Module
 
 The node module provides access to system-level features such as sleep, restart and various info and IDs.
