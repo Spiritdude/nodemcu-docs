@@ -1,4 +1,4 @@
-[NodeMCU API](../toc.md): ESP32 Platform
+[NodeMCU API](toc.md): ESP32 Platform
 # NodeMCU/ESP32
 Supported hardware: ESP32 based development boards, like ESP-WROOM-32, LOLIN32 or LOLIN32 Lite
 
@@ -24,4 +24,4 @@ Supported hardware: ESP32 based development boards, like ESP-WROOM-32, LOLIN32 o
 
 ----
 
-[NodeMCU API](../toc.md): ESP32 Platform
+[NodeMCU API](toc.md): ESP32 Platform
