@@ -1,5 +1,7 @@
 This repo aims to create a framework for an unified documentation of NodeMCU with different supported platforms, see related [github discussion](https://github.com/nodemcu/nodemcu-firmware/issues/2299).
 
+# NodeMCU Handbook
+
 - [NodeMCU API](handbook/en/toc.md) (auto generated, all platforms)
 
 Platform specific (auto generated):
