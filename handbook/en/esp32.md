@@ -7,7 +7,7 @@
 | **[file](modules/file.md)** | The file module provides access to the file system and its individual files. | 
 | **[gpio](modules/gpio.md)** | This module provides access to the [GPIO](https://en.wikipedia.org/wiki/General-purpose_input/output) (General Purpose Input/Output) subsystem. | 
 | **i2c** |  | 
-| **net** |  TLS operations was moved to the [TLS](tls.md) module  | 
+| **[net](modules/net.md)** |  TLS operations was moved to the [TLS](tls.md) module  | 
 | **node** | The node module provides access to system-level features such as sleep, restart and various info and IDs. | 
 | **ow** | This module provides functions to work with the [1-Wire](https://en.wikipedia.org/wiki/1-Wire) device communications bus system. | 
 | **sigma-delta** | This module provides access to the [sigma-delta](https://en.wikipedia.org/wiki/Delta-sigma_modulation) component. | 

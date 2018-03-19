@@ -29,7 +29,7 @@
 | **mcp4725** | supported | - | - | This module provides access to the [MCP4725 12-bit Digital to Analog Converter](http://ww1.microchip.com/downloads/en/DeviceDoc/22039d.pdf). |
 | **mdns** | supported | - | - | [Multicast DNS](https://en.wikipedia.org/wiki/Multicast_DNS) is used as part of Bonjour / Zeroconf. |
 | **mqtt** | supported | - | - | The client adheres to version 3.1.1 of the [MQTT](https://en.wikipedia.org/wiki/MQTT) protocol. |
-| **net** | supported | supported | supported |  TLS operations was moved to the [TLS](tls.md) module  |
+| **[net](en/modules/net.md)** | supported | supported | supported |  TLS operations was moved to the [TLS](tls.md) module  |
 | **node** | supported | supported | supported | The node module provides access to system-level features such as sleep, restart and various info and IDs. |
 | **ow** | supported | supported | - | This module provides functions to work with the [1-Wire](https://en.wikipedia.org/wiki/1-Wire) device communications bus system. |
 | **pcm** | supported | - | - | Play sounds through various back-ends. |
