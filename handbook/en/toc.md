@@ -35,7 +35,6 @@
 | **l3g4200d** | supported | - | - | This module provides access to the [L3G4200D](https://www.sparkfun.com/products/10612) three axis digital gyroscope. |
 | **mcp4725** | supported | - | - | This module provides access to the [MCP4725 12-bit Digital to Analog Converter](http://ww1.microchip.com/downloads/en/DeviceDoc/22039d.pdf). |
 | **mdns** | supported | - | - | [Multicast DNS](https://en.wikipedia.org/wiki/Multicast_DNS) is used as part of Bonjour / Zeroconf. |
-| **module_count** | supported | supported | supported | 
 | **mqtt** | supported | - | - | The client adheres to version 3.1.1 of the [MQTT](https://en.wikipedia.org/wiki/MQTT) protocol. |
 | **[net](en/modules/net.md)** | supported | supported | supported |  TLS operations was moved to the [TLS](tls.md) module  |
 | **[node](en/modules/node.md)** | supported | supported | supported | The node module provides access to system-level features such as sleep, restart and various info and IDs. |
