@@ -1,4 +1,4 @@
-[NodeMCU API](../toc.md): `Linux Platform
+[NodeMCU API](../toc.md): Linux Platform
 # NodeMCU/Linux
 Supported hardware: any device which runs Debian-based Linux distro (Raspbian, Armbian), incl. Raspberry Pi series (RPi 3, zero), Orange Pi series (OP Zero, OP Lite), NanoPi series (NP Neo)
 
@@ -15,4 +15,4 @@ Supported hardware: any device which runs Debian-based Linux distro (Raspbian, A
 
 ----
 
-[NodeMCU API](../toc.md): `Linux Platform
+[NodeMCU API](../toc.md): Linux Platform
