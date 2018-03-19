@@ -1,8 +1,8 @@
 # NodeMCU API
 ## Platforms
-- [ESP8266](esp8266.md)
-- [ESP32](esp32.md)
-- [Linux](linux.md)
+- **[NodeMCU/ESP8266](esp8266.md)**
+- **[NodeMCU/ESP32](esp32.md)**
+- **[NodeMCU/Linux](linux.md)**
 
 ## Modules
 | Module | esp8266 | esp32 | linux | Description |
