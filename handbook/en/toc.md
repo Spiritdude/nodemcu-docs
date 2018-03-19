@@ -1,8 +1,8 @@
 # NodeMCU API
 ## Platforms
-- **[NodeMCU/ESP8266](esp8266.md)**: ESP8266 based development boards, like Wemos D1 Mini, Adafruit HUZZAH ESP8266
-- **[NodeMCU/ESP32](esp32.md)**: ESP32 based development boards, like ESP-WROOM-32, LOLIN32 or LOLIN32 Lite
-- **[NodeMCU/Linux](linux.md)**: any device which runs Debian-based Linux distro, incl. Raspberry Pi series (RPi 3, zero), Orange Pi series (OP Zero, OP Lite), NanoPi series (NP Neo)
+- **[NodeMCU/ESP8266](esp8266.md)** (62 modules): ESP8266 based development boards, like Wemos D1 Mini, Adafruit HUZZAH ESP8266
+- **[NodeMCU/ESP32](esp32.md)** (26 modules): ESP32 based development boards, like ESP-WROOM-32, LOLIN32 or LOLIN32 Lite
+- **[NodeMCU/Linux](linux.md)** (7 modules): any device which runs Debian-based Linux distro, incl. Raspberry Pi series (RPi 3, zero), Orange Pi series (OP Zero, OP Lite), NanoPi series (NP Neo)
 
 ## Modules
 | Module | esp8266 | esp32 | linux | Description |
@@ -35,6 +35,7 @@
 | **l3g4200d** | supported | - | - | This module provides access to the [L3G4200D](https://www.sparkfun.com/products/10612) three axis digital gyroscope. |
 | **mcp4725** | supported | - | - | This module provides access to the [MCP4725 12-bit Digital to Analog Converter](http://ww1.microchip.com/downloads/en/DeviceDoc/22039d.pdf). |
 | **mdns** | supported | - | - | [Multicast DNS](https://en.wikipedia.org/wiki/Multicast_DNS) is used as part of Bonjour / Zeroconf. |
+| **module_count** | supported | supported | supported | 
 | **mqtt** | supported | - | - | The client adheres to version 3.1.1 of the [MQTT](https://en.wikipedia.org/wiki/MQTT) protocol. |
 | **[net](en/modules/net.md)** | supported | supported | supported |  TLS operations was moved to the [TLS](tls.md) module  |
 | **[node](en/modules/node.md)** | supported | supported | supported | The node module provides access to system-level features such as sleep, restart and various info and IDs. |
