@@ -19,7 +19,6 @@
 | **coap** | supported | - | - | The CoAP module provides a simple implementation according to [CoAP](http://tools.ietf.org/html/rfc7252) protocol. |
 | **cron** | supported | - | - | [Cron](https://en.wikipedia.org/wiki/Cron)-like scheduler module. |
 | **crypto** | supported | - | - | The crypto modules provides various functions for working with cryptographic algorithms. |
-| **desc** | supported | supported | supported | 
 | **dht** | supported | supported | - | 
 | **ds18b20** | supported | - | - | This module provides access to the DS18B20 1-Wire digital thermometer. |
 | **encoder** | supported | - | - | The encoder modules provides various functions for encoding and decoding byte data. |
