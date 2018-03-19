@@ -8,7 +8,7 @@
 | **[gpio](modules/gpio.md)** | This module provides access to the [GPIO](https://en.wikipedia.org/wiki/General-purpose_input/output) (General Purpose Input/Output) subsystem. | 
 | **i2c** |  | 
 | **[net](modules/net.md)** |  TLS operations was moved to the [TLS](tls.md) module  | 
-| **node** | The node module provides access to system-level features such as sleep, restart and various info and IDs. | 
+| **[node](modules/node.md)** | The node module provides access to system-level features such as sleep, restart and various info and IDs. | 
 | **ow** | This module provides functions to work with the [1-Wire](https://en.wikipedia.org/wiki/1-Wire) device communications bus system. | 
 | **sigma-delta** | This module provides access to the [sigma-delta](https://en.wikipedia.org/wiki/Delta-sigma_modulation) component. | 
 | **spi** | All transactions for sending and receiving are most-significant-bit first and least-significant last. | 

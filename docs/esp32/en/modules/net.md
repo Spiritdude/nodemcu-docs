@@ -1,0 +1,31 @@
+# net Module
+| Since  | Origin / Contributor  | Maintainer  | Source  |
+| :----- | :-------------------- | :---------- | :------ |
+| 2014-12-22 | [PhoeniX](https://github.com/djphoenix) | [Johny Mattsson](https://github.com/jmattsson), [Arnim Läuger](https://github.com/devsaurus) | [net.c](../../../components/modules/net.c)|
+## Constants
+## net.createConnection()
+## net.createServer()
+## net.createUDPSocket()
+## net.multicastJoin()
+## net.multicastLeave()
+## net.server:close()
+## net.server:listen()
+## net.server:getaddr()
+## net.socket:close()
+## net.socket:connect()
+## net.socket:dns()
+## net.socket:getpeer()
+## net.socket:getaddr()
+## net.socket:hold()
+## net.socket:on()
+## net.socket:send()
+## net.socket:unhold()
+## net.udpsocket:close()
+## net.udpsocket:listen()
+## net.udpsocket:on()
+## net.udpsocket:send()
+## net.udpsocket:dns()
+## net.udpsocket:getaddr()
+## net.dns.getdnsserver()
+## net.dns.resolve()
+## net.dns.setdnsserver()
