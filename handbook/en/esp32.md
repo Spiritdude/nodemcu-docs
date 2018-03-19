@@ -1,5 +1,5 @@
 # NodeMCU/ESP32
-Supported hardware: ESP32 based development boards, like LOLIN32 or LOLIN32 Lite
+Supported hardware: ESP32 based development boards, like ESP-WROOM-32, LOLIN32 or LOLIN32 Lite
 
 | Module | Description |
 | --- | --- |

@@ -1,5 +1,5 @@
 # NodeMCU/Linux
-Supported hardware: any devices which runs Debian-based Linux distro, incl. Raspberry Pi series, Orange Pi series, NanoPi series
+Supported hardware: any devices which runs Debian-based Linux distro, incl. Raspberry Pi series (RPi 3, zero), Orange Pi series (OP Zero, OP Lite), NanoPi series (NP Neo)
 
 | Module | Description |
 | --- | --- |
