@@ -1,4 +1,4 @@
-[NodeMCU API](../toc.md): **net** Module
+[NodeMCU API](../toc.md): `net` Module
 # net Module
 
 ** TLS operations was moved to the [TLS](tls.md) module **
@@ -855,4 +855,4 @@ This part gone to the [TLS](tls.md) module, link kept for backward compatibility
 
 ----
 
-[NodeMCU API](../toc.md): **net** Module
+[NodeMCU API](../toc.md): `net` Module

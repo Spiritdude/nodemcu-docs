@@ -1,3 +1,4 @@
+[NodeMCU API](../toc.md): `ESP32 Platform
 # NodeMCU/ESP32
 Supported hardware: ESP32 based development boards, like ESP-WROOM-32, LOLIN32 or LOLIN32 Lite
 
@@ -20,3 +21,7 @@ Supported hardware: ESP32 based development boards, like ESP-WROOM-32, LOLIN32 o
 | **uart** | The [UART](https://en.wikipedia.org/wiki/Universal_asynchronous_receiver/transmitter) (Universal asynchronous receiver/transmitter) module allows configuration of and communication over the UART serial port. | 
 | **wifi** | 	The WiFi subsystem is maintained by background tasks that must run periodically. | 
 | **ws2812** | ws2812 is a library to handle ws2812-like led strips. | 
+
+----
+
+[NodeMCU API](../toc.md): `ESP32 Platform

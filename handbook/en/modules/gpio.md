@@ -1,4 +1,4 @@
-[NodeMCU API](../toc.md): **gpio** Module
+[NodeMCU API](../toc.md): `gpio` Module
 # GPIO Module
 
 
@@ -219,4 +219,4 @@ gpio.write(pin, gpio.HIGH)
 
 ----
 
-[NodeMCU API](../toc.md): **gpio** Module
+[NodeMCU API](../toc.md): `gpio` Module

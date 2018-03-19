@@ -1,3 +1,4 @@
+[NodeMCU API](../toc.md): `Linux Platform
 # NodeMCU/Linux
 Supported hardware: any device which runs Debian-based Linux distro (Raspbian, Armbian), incl. Raspberry Pi series (RPi 3, zero), Orange Pi series (OP Zero, OP Lite), NanoPi series (NP Neo)
 
@@ -11,3 +12,7 @@ Supported hardware: any device which runs Debian-based Linux distro (Raspbian, A
 | **[node](modules/node.md)** | The node module provides access to system-level features such as sleep, restart and various info and IDs. | 
 | **sjson** | The JSON support module. | 
 | **tmr** | The tmr module allows access to simple timers, the system counter and uptime. | 
+
+----
+
+[NodeMCU API](../toc.md): `Linux Platform
