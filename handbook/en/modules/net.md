@@ -22,7 +22,7 @@
 `net.socket:on()` | supported | supported | supported | 
 `net.socket:send()` | supported | supported | supported | 
 `net.socket:ttl()` | supported | supported | - | 
-`net.socket:unhold()` | supported | supported | supported | 
+`net.socket:unhold()` | supported | supported | - | 
 `net.udpsocket:close()` | supported | supported | - | 
 `net.udpsocket:listen()` | supported | supported | - | 
 `net.udpsocket:on()` | supported | supported | - | 
@@ -603,7 +603,7 @@ sk:ttl(1) -- restrict frames to single subnet
 | --- | --- |
 | esp8266 | supported |
 | esp32 | supported |
-| linux | supported |
+| linux | - |
 
 
 Unblock TCP receiving data by revocation of a preceding `hold()`.
