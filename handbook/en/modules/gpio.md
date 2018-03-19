@@ -1,4 +1,4 @@
-[NodeMCU API](../toc.md): `gpio` Module
+[NodeMCU API](../toc.md): **gpio** Module
 # GPIO Module
 
 
@@ -216,3 +216,7 @@ gpio.write(pin, gpio.HIGH)
 | esp8266 | 2014-12-22 | [Zeroday](https://github.com/funshine) | [Zeroday](https://github.com/funshine) | [gpio.c](../../../app/modules/gpio.c)|
 | esp32 | 2016-11-26 | [Johny Mattsson](https://github.com/jmattsson) | [Johny Mattsson](https://github.com/jmattsson) | [gpio.c](../../../components/modules/gpio.c)|
 | linux 
+
+----
+
+[NodeMCU API](../toc.md): **gpio** Module

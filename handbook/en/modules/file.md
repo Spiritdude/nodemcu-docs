@@ -1,4 +1,4 @@
-[NodeMCU API](../toc.md): `file` Module
+[NodeMCU API](../toc.md): **file** Module
 # file Module
 
 The file module provides access to the file system and its individual files.
@@ -856,3 +856,7 @@ end
 | esp8266 | 2014-12-22 | [Zeroday](https://github.com/funshine) | [Zeroday](https://github.com/funshine) | [file.c](../../../app/modules/file.c)|
 | esp32 
 | linux 
+
+----
+
+[NodeMCU API](../toc.md): **file** Module

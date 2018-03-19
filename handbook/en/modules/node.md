@@ -1,4 +1,4 @@
-[NodeMCU API](../toc.md): `node` Module
+[NodeMCU API](../toc.md): **node** Module
 # node Module
 
 The node module provides access to system-level features such as sleep, restart and various info and IDs.
@@ -708,3 +708,7 @@ priority is 0
 | esp8266 | 2014-12-22 | [Zeroday](https://github.com/funshine) | [Zeroday](https://github.com/funshine) | [node.c](../../../app/modules/node.c)|
 | esp32 | 2014-12-22 | [Zeroday](https://github.com/funshine) | [Zeroday](https://github.com/funshine) | [node.c](../../../app/modules/node.c)|
 | linux 
+
+----
+
+[NodeMCU API](../toc.md): **node** Module
