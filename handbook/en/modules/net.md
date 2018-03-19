@@ -849,5 +849,5 @@ This part gone to the [TLS](tls.md) module, link kept for backward compatibility
 | Platform | Since | Origin/Contributor | Maintainer | Source |
 | --- | --- | --- | --- | --- |
 | esp8266 | 2014-12-22 | [Zeroday](https://github.com/funshine) | [PhoeniX](https://github.com/djphoenix) | [net.c](../../../app/modules/net.c)|
-| esp32 
+| esp32 | 2014-12-22 | [PhoeniX](https://github.com/djphoenix) | [Johny Mattsson](https://github.com/jmattsson), [Arnim Läuger](https://github.com/devsaurus) | [net.c](../../../components/modules/net.c)|
 | linux 
