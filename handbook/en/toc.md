@@ -1,9 +1,10 @@
 # NodeMCU API
-Platform specific:
+## Platforms
 - [ESP8266](esp8266.md)
 - [ESP32](esp32.md)
 - [Linux](linux.md)
 
+## Modules
 | Module | esp8266 | esp32 | linux | Description |
 | --- | --- | --- | --- | -- |
 | **adc** | supported | supported | - | The ADC module provides access to the in-built ADC. |
