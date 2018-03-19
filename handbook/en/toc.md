@@ -1,8 +1,8 @@
 # NodeMCU API
 ## Platforms
-- **[NodeMCU/ESP8266](esp8266.md)** (62 modules): ESP8266 based development boards, like Wemos D1 Mini, Adafruit HUZZAH ESP8266
-- **[NodeMCU/ESP32](esp32.md)** (26 modules): ESP32 based development boards, like ESP-WROOM-32, LOLIN32 or LOLIN32 Lite
-- **[NodeMCU/Linux](linux.md)** (7 modules): any device which runs Debian-based Linux distro, incl. Raspberry Pi series (RPi 3, zero), Orange Pi series (OP Zero, OP Lite), NanoPi series (NP Neo)
+- **[NodeMCU/ESP8266](esp8266.md)** (62 software modules), supports ESP8266 based development boards, like Wemos D1 Mini, Adafruit HUZZAH ESP8266
+- **[NodeMCU/ESP32](esp32.md)** (26 software modules), supports ESP32 based development boards, like ESP-WROOM-32, LOLIN32 or LOLIN32 Lite
+- **[NodeMCU/Linux](linux.md)** (7 software modules), supports any device which runs Debian-based Linux distro, incl. Raspberry Pi series (RPi 3, zero), Orange Pi series (OP Zero, OP Lite), NanoPi series (NP Neo)
 
 ## Modules
 | Module | esp8266 | esp32 | linux | Description |
