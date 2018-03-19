@@ -1,5 +1,6 @@
 # NodeMCU/ESP32
 Supported hardware: ESP32 based development boards, like LOLIN32 or LOLIN32 Lite
+
 | Module | Description |
 | --- | --- |
 | **adc** | The ADC module provides access to the in-built ADC. | 

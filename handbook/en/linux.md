@@ -1,5 +1,6 @@
 # NodeMCU/Linux
 Supported hardware: any devices which runs Debian-based Linux distro, incl. Raspberry Pi series, Orange Pi series, NanoPi series
+
 | Module | Description |
 | --- | --- |
 | **bit** | Bit manipulation support, on 32bit integers. | 
