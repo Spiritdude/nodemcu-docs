@@ -1,8 +1,8 @@
 # NodeMCU API
 ## Platforms
-- **[NodeMCU/ESP8266](esp8266.md)**
-- **[NodeMCU/ESP32](esp32.md)**
-- **[NodeMCU/Linux](linux.md)**
+- **[NodeMCU/ESP8266](esp8266.md)**: ESP8266 based development boards, like Wemos D1 Mini
+- **[NodeMCU/ESP32](esp32.md)**: ESP32 based development boards, like LOLIN32 or LOLIN32 Lite
+- **[NodeMCU/Linux](linux.md)**: any devices which runs Debian-based Linux distro, incl. Raspberry Pi series, Orange Pi series, NanoPi series
 
 ## Modules
 | Module | esp8266 | esp32 | linux | Description |
@@ -19,6 +19,7 @@
 | **coap** | supported | - | - | The CoAP module provides a simple implementation according to [CoAP](http://tools.ietf.org/html/rfc7252) protocol. |
 | **cron** | supported | - | - | [Cron](https://en.wikipedia.org/wiki/Cron)-like scheduler module. |
 | **crypto** | supported | - | - | The crypto modules provides various functions for working with cryptographic algorithms. |
+| **desc** | supported | supported | supported | 
 | **dht** | supported | supported | - | 
 | **ds18b20** | supported | - | - | This module provides access to the DS18B20 1-Wire digital thermometer. |
 | **encoder** | supported | - | - | The encoder modules provides various functions for encoding and decoding byte data. |

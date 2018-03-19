@@ -1,8 +1,10 @@
 # NodeMCU/ESP32
+Supported hardware: ESP32 based development boards, like LOLIN32 or LOLIN32 Lite
 | Module | Description |
 | --- | --- |
 | **adc** | The ADC module provides access to the in-built ADC. | 
 | **bit** | Bit manipulation support, on 32bit integers. | 
+| **desc** |  | 
 | **dht** |  | 
 | **[file](modules/file.md)** | The file module provides access to the file system and its individual files. | 
 | **[gpio](modules/gpio.md)** | This module provides access to the [GPIO](https://en.wikipedia.org/wiki/General-purpose_input/output) (General Purpose Input/Output) subsystem. | 

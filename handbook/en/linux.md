@@ -1,7 +1,9 @@
 # NodeMCU/Linux
+Supported hardware: any devices which runs Debian-based Linux distro, incl. Raspberry Pi series, Orange Pi series, NanoPi series
 | Module | Description |
 | --- | --- |
 | **bit** | Bit manipulation support, on 32bit integers. | 
+| **desc** |  | 
 | **[file](modules/file.md)** | The file module provides access to the file system and its individual files. | 
 | **[gpio](modules/gpio.md)** | This module provides access to the [GPIO](https://en.wikipedia.org/wiki/General-purpose_input/output) (General Purpose Input/Output) subsystem. | 
 | **[net](modules/net.md)** |  TLS operations was moved to the [TLS](tls.md) module  | 
