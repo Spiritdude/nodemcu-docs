@@ -50,12 +50,7 @@ end
 
 ## file.chdir()
 
-| Platform | Support |
-| --- | --- |
-| esp8266 | supported |
-| esp32 | supported |
-| linux | supported |
-
+| Support  | esp8266 | esp32 | linux
 
 Change current directory (and drive). This will be used when no drive/directory is prepended to filenames.
 
@@ -76,12 +71,7 @@ Current directory defaults to the root of internal SPIFFS (`/FLASH`) after syste
 
 ## file.exists()
 
-| Platform | Support |
-| --- | --- |
-| esp8266 | supported |
-| esp32 | supported |
-| linux | supported |
-
+| Support  | esp8266 | esp32 | linux
 
 Determines whether the specified file exists.
 
@@ -111,12 +101,7 @@ end
 
 ## file.format()
 
-| Platform | Support |
-| --- | --- |
-| esp8266 | supported |
-| esp32 | supported |
-| linux | supported |
-
+| Support  | esp8266 | esp32 | linux
 
 Format the file system. Completely erases any existing file system and writes a new one. Depending on the size of the flash chip in the ESP, this may take several seconds.
 
@@ -138,12 +123,7 @@ none
 
 ## file.fscfg ()
 
-| Platform | Support |
-| --- | --- |
-| esp8266 | supported |
-| esp32 | supported |
-| linux | supported |
-
+| Support  | esp8266 | esp32 | linux
 
 Returns the flash address and physical size of the file system area, in bytes.
 
@@ -168,12 +148,7 @@ print(string.format("0x%x", file.fscfg()))
 
 ## file.fsinfo()
 
-| Platform | Support |
-| --- | --- |
-| esp8266 | supported |
-| esp32 | supported |
-| linux | supported |
-
+| Support  | esp8266 | esp32 | linux
 
 Return size information for the file system. The unit is Byte for SPIFFS and kByte for FatFS.
 
@@ -198,12 +173,7 @@ print("\nFile system info:\nTotal : "..total.." (k)Bytes\nUsed : "..used.." (k)B
 
 ## file.list()
 
-| Platform | Support |
-| --- | --- |
-| esp8266 | supported |
-| esp32 | supported |
-| linux | supported |
-
+| Support  | esp8266 | esp32 | linux
 
 Lists all files in the file system.
 
@@ -226,12 +196,7 @@ end
 
 ## file.mount()
 
-| Platform | Support |
-| --- | --- |
-| esp8266 | supported |
-| esp32 | supported |
-| linux | supported |
-
+| Support  | esp8266 | esp32 | linux
 
 Mounts a FatFs volume on SD card.
 
@@ -257,12 +222,7 @@ vol:umount()
 
 ## file.on()
 
-| Platform | Support |
-| --- | --- |
-| esp8266 | supported |
-| esp32 | supported |
-| linux | - |
-
+| Support  | esp8266 | esp32 | <strike>linux</strike>
 
 Registers callback functions.
 
@@ -297,12 +257,7 @@ sntp.sync(server_ip,
 
 ## file.open()
 
-| Platform | Support |
-| --- | --- |
-| esp8266 | supported |
-| esp32 | supported |
-| linux | supported |
-
+| Support  | esp8266 | esp32 | linux
 
 Opens a file for access, potentially creating it (for write modes).
 
@@ -348,12 +303,7 @@ end
 
 ## file.remove()
 
-| Platform | Support |
-| --- | --- |
-| esp8266 | supported |
-| esp32 | supported |
-| linux | supported |
-
+| Support  | esp8266 | esp32 | linux
 
 Remove a file from the file system. The file must not be currently open.
 
@@ -377,12 +327,7 @@ file.remove("foo.lua")
 
 ## file.rename()
 
-| Platform | Support |
-| --- | --- |
-| esp8266 | supported |
-| esp32 | supported |
-| linux | supported |
-
+| Support  | esp8266 | esp32 | linux
 
 Renames a file. If a file is currently open, it will be closed first.
 
@@ -405,12 +350,7 @@ file.rename("temp.lua","init.lua")
 
 ## file.stat()
 
-| Platform | Support |
-| --- | --- |
-| esp8266 | supported |
-| esp32 | - |
-| linux | supported |
-
+| Support  | esp8266 | <strike>esp32</strike> | linux
 
 Get attribtues of a file or directory in a table. Elements of the table are:
 
@@ -467,12 +407,7 @@ The `file` module provides several functions to access the content of a file aft
 
 ## Basic model
 
-| Platform | Support |
-| --- | --- |
-| esp8266 | supported |
-| esp32 | supported |
-| linux | supported |
-
+| Support  | esp8266 | esp32 | linux
 In the basic model there is max one file opened at a time. The file access functions operate on this file per default. If another file is opened, the previous default file needs to be closed beforehand.
 
 ```lua
@@ -485,12 +420,7 @@ end
 
 ## Object model
 
-| Platform | Support |
-| --- | --- |
-| esp8266 | supported |
-| esp32 | - |
-| linux | supported |
-
+| Support  | esp8266 | <strike>esp32</strike> | linux
 Files are represented by file objects which are created by `file.open()`. File access functions are available as methods of this object, and multiple file objects can coexist.
 
 ```lua
@@ -521,12 +451,7 @@ end
 
 ## file.close(), file.obj:close()
 
-| Platform | Support |
-| --- | --- |
-| esp8266 | supported |
-| esp32 | supported |
-| linux | supported |
-
+| Support  | esp8266 | esp32 | linux
 
 Closes the open file, if any.
 
@@ -554,12 +479,7 @@ none
 
 ## file.flush(), file.obj:flush()
 
-| Platform | Support |
-| --- | --- |
-| esp8266 | supported |
-| esp32 | supported |
-| linux | supported |
-
+| Support  | esp8266 | esp32 | linux
 
 Flushes any pending writes to the file system, ensuring no data is lost on a restart. Closing the open file using [`file.close()` / `fd:close()`](#fileclose-fileobjclose) performs an implicit flush as well.
 
@@ -600,12 +520,7 @@ end
 
 ## file.read(), file.obj:read()
 
-| Platform | Support |
-| --- | --- |
-| esp8266 | supported |
-| esp32 | supported |
-| linux | supported |
-
+| Support  | esp8266 | esp32 | linux
 
 Read content from the open file.
 
@@ -660,12 +575,7 @@ end
 
 ## file.readline(), file.obj:readline()
 
-| Platform | Support |
-| --- | --- |
-| esp8266 | supported |
-| esp32 | supported |
-| linux | supported |
-
+| Support  | esp8266 | esp32 | linux
 
 Read the next line from the open file. Lines are defined as zero or more bytes ending with a EOL ('\n') byte. If the next line is longer than 1024, this function only returns the first 1024 bytes.
 
@@ -705,12 +615,7 @@ end
 
 ## file.seek(), file.obj:seek()
 
-| Platform | Support |
-| --- | --- |
-| esp8266 | supported |
-| esp32 | supported |
-| linux | supported |
-
+| Support  | esp8266 | esp32 | linux
 
 Sets and gets the file position, measured from the beginning of the file, to the position given by offset plus a base specified by the string whence.
 
@@ -753,12 +658,7 @@ end
 
 ## file.write(), file.obj:write()
 
-| Platform | Support |
-| --- | --- |
-| esp8266 | supported |
-| esp32 | supported |
-| linux | supported |
-
+| Support  | esp8266 | esp32 | linux
 
 Write a string to the open file.
 
@@ -808,12 +708,7 @@ end
 
 ## file.writeline(), file.obj:writeline()
 
-| Platform | Support |
-| --- | --- |
-| esp8266 | supported |
-| esp32 | supported |
-| linux | supported |
-
+| Support  | esp8266 | esp32 | linux
 
 Write a string to the open file and append '\n' at the end.
 
