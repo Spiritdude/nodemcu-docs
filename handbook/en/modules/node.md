@@ -28,7 +28,7 @@ The node module provides access to system-level features such as sleep, restart 
 
 ## node.bootreason()
 
-**Support:**  | esp8266 | esp32 | linux
+**Support:** esp8266 | esp32 | linux
 
 Returns the boot reason and extended reset info.
 
@@ -70,7 +70,7 @@ if reset_reason == 0 then print("Power UP!") end
 
 ## node.chipid()
 
-**Support:**  | esp8266 | esp32 | linux
+**Support:** esp8266 | esp32 | linux
 
 Returns the ESP chip ID.
 
@@ -85,7 +85,7 @@ chip ID (number)
 
 ## node.compile()
 
-**Support:**  | esp8266 | esp32 | linux
+**Support:** esp8266 | esp32 | linux
 
 Compiles a Lua text file into Lua bytecode, and saves it as .lc file.
 
@@ -112,7 +112,7 @@ dofile("hello.lc")
 
 ## node.dsleep()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Enters deep sleep mode, wakes up when timed out.
 
@@ -163,7 +163,7 @@ node.dsleep(nil,4)
 
 ## node.flashid()
 
-**Support:**  | esp8266 | esp32 | linux
+**Support:** esp8266 | esp32 | linux
 
 Returns the flash chip ID.
 
@@ -178,7 +178,7 @@ flash ID (number)
 
 ## node.flashsize()
 
-**Support:**  | esp8266 | <strike>esp32</strike> | linux
+**Support:** esp8266 | <strike>esp32</strike> | linux
 
 Returns the flash chip size in bytes. On 4MB modules like ESP-12 the return value is 4194304 = 4096KB.
 
@@ -193,7 +193,7 @@ flash size in bytes (integer)
 
 ## node.heap()
 
-**Support:**  | esp8266 | esp32 | linux
+**Support:** esp8266 | esp32 | linux
 
 Returns the current available heap size in bytes. Note that due to fragmentation, actual allocations of this size may not be possible.
 
@@ -208,7 +208,7 @@ system heap size left in bytes (number)
 
 ## node.info()
 
-**Support:**  | esp8266 | <strike>esp32</strike> | linux
+**Support:** esp8266 | <strike>esp32</strike> | linux
 
 Returns NodeMCU version, chipid, flashid, flash size, flash mode, flash speed.
 
@@ -243,7 +243,7 @@ print("NodeMCU "..majorVer.."."..minorVer.."."..devVer)
 
 ## node.input()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Submits a string to the Lua interpreter. Similar to `pcall(loadstring(str))`, but without the single-line limitation.
 
@@ -270,7 +270,7 @@ sk:on("receive", function(conn, payload) node.input(payload) end)
 
 ## node.output()
 
-**Support:**  | esp8266 | esp32 | linux
+**Support:** esp8266 | esp32 | linux
 
 Redirects the Lua interpreter output to a callback function. Optionally also prints it to the serial console.
 
@@ -321,12 +321,12 @@ end)
 
 ## node.readvdd33() --deprecated
 
-**Support:**  | esp8266 | esp32 | linux
+**Support:** esp8266 | esp32 | linux
 Moved to [`adc.readvdd33()`](adc/#adcreadvdd33).
 
 ## node.restart()
 
-**Support:**  | esp8266 | esp32 | linux
+**Support:** esp8266 | esp32 | linux
 
 Restarts the chip.
 
@@ -341,7 +341,7 @@ none
 
 ## node.restore()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Restores system configuration to defaults using the SDK function `system_restore()`, which is described in the documentation as:
 
@@ -364,7 +364,7 @@ node.restart() -- ensure the restored settings take effect
 
 ## node.setcpufreq()
 
-**Support:**  | esp8266 | <strike>esp32</strike> | linux
+**Support:** esp8266 | <strike>esp32</strike> | linux
 
 Change the working CPU Frequency.
 
@@ -385,7 +385,7 @@ node.setcpufreq(node.CPU80MHZ)
 
 ## node.sleep()
 
-**Support:**  | esp8266 | <strike>esp32</strike> | <strike>linux</strike>
+**Support:** esp8266 | <strike>esp32</strike> | <strike>linux</strike>
 
 Put NodeMCU in light sleep mode to reduce current consumption. 
 
@@ -451,7 +451,7 @@ Put NodeMCU in light sleep mode to reduce current consumption.
 
 ## node.stripdebug()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Controls the amount of debug information kept during [`node.compile()`](#nodecompile), and allows removal of debug information from already compiled Lua code.
 
@@ -483,7 +483,7 @@ node.compile('bigstuff.lua')
 
 ## node.osprint()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Controls whether the debugging output from the Espressif SDK is printed. Note that this is only available if
 the firmware is build with DEVELOPMENT_TOOLS defined.
@@ -504,7 +504,7 @@ node.osprint(true)
 
 ## node.random()
 
-**Support:**  | esp8266 | <strike>esp32</strike> | linux
+**Support:** esp8266 | <strike>esp32</strike> | linux
 
 This behaves like math.random except that it uses true random numbers derived from the ESP8266 hardware. It returns uniformly distributed
 numbers in the required range. It also takes care to get large ranges correct. 
@@ -535,7 +535,7 @@ print ("I rolled a", node.random(6))
 
 ## node.egc.setmode()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Sets the Emergency Garbage Collector mode. [The EGC whitepaper](http://www.eluaproject.net/doc/v0.9/en_elua_egc.html)
 provides more detailed information on the EGC.
@@ -563,7 +563,7 @@ provides more detailed information on the EGC.
 
 ## node.task.post()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Enable a Lua callback or task to post another task request. Note that as per the 
 example multiple tasks can be posted in any task, but the highest priority is 

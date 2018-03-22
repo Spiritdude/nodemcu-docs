@@ -37,12 +37,12 @@
 
 ## Constants
 
-**Support:**  | esp8266 | esp32 | linux
+**Support:** esp8266 | esp32 | linux
 Constants to be used in other functions: `net.TCP`, `net.UDP`
 
 ## net.createConnection()
 
-**Support:**  | esp8266 | esp32 | linux
+**Support:** esp8266 | esp32 | linux
 
 Creates a client.
 
@@ -75,7 +75,7 @@ net.createConnection(net.TCP, 0)
 
 ## net.createServer()
 
-**Support:**  | esp8266 | esp32 | linux
+**Support:** esp8266 | esp32 | linux
 
 Creates a server.
 
@@ -105,7 +105,7 @@ net.createServer(net.TCP, 30) -- 30s timeout
 
 ## net.createUDPSocket()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Creates an UDP socket.
 
@@ -123,7 +123,7 @@ none
 
 ## net.multicastJoin()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Join multicast group.
 
@@ -139,7 +139,7 @@ Join multicast group.
 
 ## net.multicastLeave()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Leave multicast group.
 
@@ -157,7 +157,7 @@ Leave multicast group.
 
 ## net.server:close()
 
-**Support:**  | esp8266 | esp32 | linux
+**Support:** esp8266 | esp32 | linux
 
 Closes the server.
 
@@ -183,7 +183,7 @@ sv:close()
 
 ## net.server:listen()
 
-**Support:**  | esp8266 | esp32 | linux
+**Support:** esp8266 | esp32 | linux
 
 Listen on port from IP address.
 
@@ -222,7 +222,7 @@ end
 
 ## net.server:getaddr()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Returns server local address/port.
 
@@ -242,7 +242,7 @@ none
 # net.socket Module
 ## net.socket:close()
 
-**Support:**  | esp8266 | esp32 | linux
+**Support:** esp8266 | esp32 | linux
 
 Closes socket.
 
@@ -260,7 +260,7 @@ none
 
 ## net.socket:connect()
 
-**Support:**  | esp8266 | esp32 | linux
+**Support:** esp8266 | esp32 | linux
 
 Connect to a remote server.
 
@@ -279,7 +279,7 @@ Connect to a remote server.
 
 ## net.socket:dns()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Provides DNS resolution for a hostname.
 
@@ -305,7 +305,7 @@ sk = nil
 
 ## net.socket:getpeer()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Retrieve port and ip of remote peer.
 
@@ -320,7 +320,7 @@ none
 
 ## net.socket:getaddr()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Retrieve local port and ip of socket.
 
@@ -335,7 +335,7 @@ none
 
 ## net.socket:hold()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Throttle data reception by placing a request to block the TCP receive function. This request is not effective immediately, Espressif recommends to call it while reserving 5*1460 bytes of memory.
 
@@ -353,7 +353,7 @@ none
 
 ## net.socket:on()
 
-**Support:**  | esp8266 | esp32 | linux
+**Support:** esp8266 | esp32 | linux
 
 Register callback functions for specific events.
 
@@ -412,7 +412,7 @@ end)
 
 ## net.socket:send()
 
-**Support:**  | esp8266 | esp32 | linux
+**Support:** esp8266 | esp32 | linux
 
 Sends data to remote peer.
 
@@ -485,7 +485,7 @@ end)
 
 ## net.socket:ttl()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Changes or retrieves Time-To-Live value on socket.
 
@@ -510,7 +510,7 @@ sk:ttl(1) -- restrict frames to single subnet
 
 ## net.socket:unhold()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Unblock TCP receiving data by revocation of a preceding `hold()`.
 
@@ -538,7 +538,7 @@ Other points worth noting:
 
 ## net.udpsocket:close()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Closes UDP socket.
 
@@ -546,7 +546,7 @@ The syntax and functional identical to [`net.socket:close()`](#netsocketclose).
 
 ## net.udpsocket:listen()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Listen on port from IP address.
 
@@ -554,7 +554,7 @@ The syntax and functional similar to [`net.server:listen()`](#netserverlisten), 
 
 ## net.udpsocket:on()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Register callback functions for specific events.
 
@@ -565,7 +565,7 @@ The syntax and functional similar to [`net.socket:on()`](#netsocketon). However,
 
 ## net.udpsocket:send()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Sends data to specific remote peer.
 
@@ -600,7 +600,7 @@ echo -n "foo" | nc -w1 -u <device-IP-address> 5000
 
 ## net.udpsocket:dns()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Provides DNS resolution for a hostname.
 
@@ -608,7 +608,7 @@ The syntax and functional identical to [`net.socket:dns()`](#netsocketdns).
 
 ## net.udpsocket:getaddr()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Retrieve local port and ip of socket.
 
@@ -616,7 +616,7 @@ The syntax and functional identical to [`net.socket:getaddr()`](#netsocketgetadd
 
 ## net.udpsocket:ttl()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Changes or retrieves Time-To-Live value on socket.
 
@@ -626,7 +626,7 @@ The syntax and functional identical to [`net.socket:ttl()`](#netsocketttl).
 
 ## net.dns.getdnsserver()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Gets the IP address of the DNS server used to resolve hostnames.
 
@@ -655,7 +655,7 @@ print(net.dns.getdnsserver(1)) -- 192.168.1.252
 
 ## net.dns.resolve()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Resolve a hostname to an IP address. Doesn't require a socket like [`net.socket.dns()`](#netsocketdns).
 
@@ -680,7 +680,7 @@ end)
 
 ## net.dns.setdnsserver()
 
-**Support:**  | esp8266 | esp32 | <strike>linux</strike>
+**Support:** esp8266 | esp32 | <strike>linux</strike>
 
 Sets the IP of the DNS server used to resolve hostnames. Default: resolver1.opendns.com (208.67.222.222). You can specify up to 2 DNS servers.
 
