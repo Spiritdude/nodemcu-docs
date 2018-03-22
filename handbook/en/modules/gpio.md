@@ -24,6 +24,7 @@ If not using a NodeMCU dev kit, please refer to the below GPIO pin maps for the 
 
 **Support:** esp8266 | <strike>esp32</strike> | linux
 
+
 Initialize pin to GPIO mode, set the pin in/out direction, and optional internal weak pull-up.
 
 #### Syntax
@@ -49,6 +50,7 @@ gpio.mode(0, gpio.OUTPUT)
 
 **Support:** esp8266 | esp32 | linux
 
+
 Read digital GPIO pin value.
 
 #### Syntax
@@ -71,6 +73,7 @@ gpio.read(0)
 ## gpio.serout()
 
 **Support:** esp8266 | <strike>esp32</strike> | <strike>linux</strike>
+
 
 Serialize output based on a sequence of delay-times in µs. After each delay, the pin is toggled. After the last cycle and last delay the pin is not toggled.
 
@@ -118,6 +121,7 @@ gpio.serout(1,gpio.HIGH,{5000,995000},100, 1) -- asynchronous 100 flashes 5 ms l
 
 **Support:** esp8266 | esp32 | <strike>linux</strike>
 
+
 Establish or clear a callback function to run on interrupt for a pin.
 
 This function is not available if GPIO_INTERRUPT_ENABLE was undefined at compile time.
@@ -161,6 +165,7 @@ end
 ## gpio.write()
 
 **Support:** esp8266 | esp32 | linux
+
 
 Set digital GPIO pin value.
 
