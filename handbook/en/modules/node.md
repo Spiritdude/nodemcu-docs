@@ -329,12 +329,6 @@ end)
 #### See also
 [`node.input()`](#nodeinput)
 
-## node.readvdd33() --deprecated
-
-**Support:** esp8266 | esp32 | linux
-
-Moved to [`adc.readvdd33()`](adc/#adcreadvdd33).
-
 ## node.restart()
 
 **Support:** esp8266 | esp32 | linux
